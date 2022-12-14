@@ -8,9 +8,9 @@ if __name__ == "__main__":
     DEBUG = False
 
     CONFIG_MODELS = [
-        "./config/models/cell_experiment/nubot.yaml",
-        "./config/models/cell_experiment/cellot.yaml",
-        "./config/models/cell_experiment/ubot_gan.yaml",
+        "./config/models/cell_experiments/nubot.yaml",
+        "./config/models/cell_experiments/cellot.yaml",
+        "./config/models/cell_experiments/ubot_gan.yaml",
     ]
     CONFIG_DATAS = [
         "./config/data/4i-8h-raw.yaml",
