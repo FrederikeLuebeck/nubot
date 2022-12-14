@@ -1,0 +1,14 @@
+features: ./datasets/4i/features.txt
+
+preprocess:
+    - name: qscale
+      key: drug
+      value: control
+      q: 0.75
+
+    - name: log1p
+  
+datasplit:
+  groupby: drug
+  name: train_test
+  test_size: 0.2

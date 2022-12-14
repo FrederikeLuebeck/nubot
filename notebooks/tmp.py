@@ -1,0 +1,1 @@
+rv["model"] = rv["model"].replace({"model-nubot_v1": "NubOT", "model-cellot": "CellOT", "model-gan": "ubOT GAN", "model-identity": "Identity", "model-control": "Observed", "model-ot": "Discrete OT", "model-gaussian": "Gaussian Approx", "model-gaussian-unb": "Gaussian Approx Unb", "model-ubot": "Discrete UBOT", "model-nubot_v1_norm": "NubOT_norm"})

@@ -1,0 +1,33 @@
+training:
+  n_iter: 10000
+  n_iter_D: 4
+  n_iter_G: 3
+  log_freq: 400
+  lamb0: 0.1
+  lamb1: 0.1
+  lamb2: 1
+  lambG: 10
+  lambG2: 0.01
+  c1: mse
+  c2: pearson
+  psi: paper
+  gradient_penalty: False
+  adapt_batch_size: True
+
+model:
+  name: gan
+  D:
+    hidden_units: [64, 64, 64, 64] 
+    activation: relu
+  G:
+    hidden_units: [64, 64, 64, 64] 
+    activation: relu
+    hidden_units_scaling: [32]
+    sigmoid: false
+
+optim:
+  lr: 0.0001
+  optimizer: Adam
+  weight_decay: 0
+
+pretrain: False

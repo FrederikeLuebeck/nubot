@@ -1,0 +1,6 @@
+data: 
+  type: toy
+  source: square_five
+  target: square_four
+  loader:
+    batch_size: 1024

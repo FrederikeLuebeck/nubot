@@ -1,0 +1,6 @@
+data: 
+  type: toy
+  source: simple
+  target: circle
+  loader:
+    batch_size: 1024

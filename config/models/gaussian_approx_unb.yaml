@@ -1,0 +1,5 @@
+model:
+  name: gaussian
+training:
+  adapt_batch_size: False
+  gamma: 10

@@ -1,0 +1,41 @@
+training:
+  n_iter: 10000
+  n_iter_inner: 1
+  log_freq: 4000
+  cache_freq: 4000
+  #adapt_batch_size: True
+  #exlude_wxhat: True
+  mult_by: "n"
+
+model:
+  name: nubot_v1
+  kernel_init_fxn:
+    b: 0.1
+    name: uniform
+  softplus_W_kernels: false
+  g:
+    fnorm_penalty: 1
+  h:
+    hidden_units: [32, 32]
+    activation: relu
+    sigmoid: False
+  hidden_units: [64, 64, 64, 64]
+  init: identity
+
+optim:
+  beta1: 0.5
+  beta2: 0.9
+  lr: 0.001
+  optimizer: Adam
+  weight_decay: 0
+
+optim_h:
+  beta1: 0.5
+  beta2: 0.9
+  lr: 0.001
+  optimizer: Adam
+  weight_decay: 0
+
+sinkhorn:
+  reg: 0.0075
+  reg_m: 0.05

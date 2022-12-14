@@ -1,0 +1,6 @@
+data: 
+  type: toy
+  source: inner_triangle_unbalanced_1_flipped 
+  target: outer_triangle_unbalanced_1
+  loader:
+    batch_size: 400

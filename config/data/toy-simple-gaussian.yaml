@@ -1,0 +1,6 @@
+data: 
+  type: toy
+  source: gaussian_lower
+  target: gaussian_upper
+  loader:
+    batch_size: 400
