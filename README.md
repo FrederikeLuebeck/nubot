@@ -2,7 +2,7 @@
 
 Master's Thesis by Frederike Lübeck
 
-Advised by: Charlotte Bunne, David-Alvarez Melis, Andreas Krause
+Advised by: Charlotte Bunne, David Alvarez-Melis, Andreas Krause
 
 ## Overview
 <p align='center'><img src='fig_overview.png' alt='Overview.' width='100%'> </p>
