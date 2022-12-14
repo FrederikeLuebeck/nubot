@@ -86,46 +86,6 @@ def main(argv):
             config=wandb_config,
         )
 
-    elif FLAGS.sweep:
-        wandb.init()
-        # TODO: allow sweep to configure only some params, and take other from config file (update ConfigDict)
-        config = ConfigDict(wandb.config)
-        print(config)
-
-        if "data" not in config.keys():
-            with open(FLAGS.config_data) as file:
-                data_config = yaml.load(file, Loader=yaml.FullLoader)
-            config.update(data_config)
-            if FLAGS.target is not None:
-                config.data.target = FLAGS.target
-
-            wandb.config.update(flat_dict(config.to_dict()))
-
-            seed = config.training.get("seed", 0)
-
-        config.config_data = FLAGS.config_data
-        config.config_model = FLAGS.config_model
-
-        if config.data.type == "cell":
-            if FLAGS.target is not None:
-                config.data.target = FLAGS.target
-            else:
-                config.data.target = "trametinib"
-        project = config.data.type
-        if config.data.type == "cell":
-            project = project + "-" + config.data.target
-            FLAGS.data_class = config.data.type
-            FLAGS.data_name = config.data.target
-            FLAGS.data_name2 = config.data.path.split("/")[-1].replace(".h5ad", "")
-        elif config.data.type == "toy":
-            FLAGS.data_class = config.data.type
-            FLAGS.data_name = config.data.source + "_" + config.data.target
-
-        if len(FLAGS.model_name) == 0:
-            FLAGS.model_name = config.model.name
-
-        wandb.config.update(flat_dict(config.to_dict()))
-
     # name and create output directory
     outdir = name_outdir()
     outdir = outdir.resolve()
