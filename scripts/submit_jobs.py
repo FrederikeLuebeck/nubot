@@ -47,7 +47,7 @@ if __name__ == "__main__":
         "ulixertinib",
         "vindesine",
     ]
-    eval = True
+    eval = False
     if not eval:
         for drug in DRUGS:
             for CONFIG_MODEL in CONFIG_MODELS:
