@@ -37,7 +37,7 @@ NubOT and the baselines can now be trained by running the script ```python scrip
 - `--config_model`: Model configuration file, i.e., one of the `.yaml` files in `config/models/`
 - `--config_data`: Data configuration file, i.e., one of the `.yaml` files in `config/data/`
 - `--target` *(optional)*: Target drug when using the cell data, e.g., `cisplatin`
-- `--restart`*(optinoal)*: If this flag is set, the model restarts from scratch. Otherwise, the model is loaded from a previous checkpoint, if existent.
+- `--restart`*(optional)*: If this flag is set, the model restarts from scratch. Otherwise, the model is loaded from a previous checkpoint, if existent.
 - `--experiment_name`,  `--experiment_dir` and `--outdir` can be provided to save the outputs in specific folders.
 
 For example, the command for training NubOT on the cell data at 8h for the drug cisplatin is:
