@@ -8,7 +8,7 @@ training:
   mult_by: "n"
 
 model:
-  name: nubot_v1
+  name: nubot
   kernel_init_fxn:
     b: 0.1
     name: uniform
