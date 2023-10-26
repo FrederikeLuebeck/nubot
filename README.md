@@ -1,8 +1,6 @@
 # Neural Unbalanced Optimal Transport for Modeling Single-Cell Dynamics
 
-Master's Thesis by Frederike Lübeck
-
-Advised by: Charlotte Bunne, David Alvarez-Melis, Andreas Krause
+Frederike Lübeck*, Charlotte Bunne*, Gabriele Gut, Jacobo Sarabia Castillo, Lucas Pelkmans, and David Alvarez Melis
 
 ## Overview
 <p align='center'><img src='fig_overview.png' alt='Overview.' width='100%'> </p>
@@ -28,7 +26,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-The pre-processed data files can be downloaded [here](https://drive.google.com/drive/folders/1tgsMD61ZTsUKy4C5flwct0i7BMlepAVL?usp=share_link).
+The pre-processed data files can be downloaded [here](https://doi.org/10.3929/ethz-b-000631091).
 
 ## Running Model
 
