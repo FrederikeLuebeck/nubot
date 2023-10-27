@@ -15,7 +15,7 @@ Optimal transport (OT) can help solve this challenge by learning an optimal coup
 To setup the environment, run the following commands:
 
 ```
-conda conda env create -f environment.yml
+conda env create -f environment.yml
 pip install -e .
 ```
 
