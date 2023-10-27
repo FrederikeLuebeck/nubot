@@ -1,4 +1,4 @@
-from collections import MutableMapping
+from collections.abc import MutableMapping
 import yaml
 from ml_collections import ConfigDict
 from pathlib import Path
@@ -10,9 +10,7 @@ import torch
 import random
 import numpy as np
 
-
 def load_config(path, unparsed=None):
-
     path = Path(path)
 
     if path.exists():

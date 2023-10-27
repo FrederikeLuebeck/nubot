@@ -1,0 +1,28 @@
+name: nubot
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python==3.9.5
+  - jaxlib==0.4.2
+  - jax
+  - setuptools
+  - numpy
+  - matplotlib
+  - scanpy
+  - jupyterlab
+  - ipython
+  - anndata
+  - pandas
+  - scikit-learn
+  - scipy
+  - seaborn
+  - torchvision
+  - pytorch
+  - pyyaml
+  - wandb
+  - ml-collections
+  - ott-jax
+  - POT
+  - leidenalg
+  - protobuf

@@ -138,7 +138,6 @@ def name_outdir():
 
 
 if __name__ == "__main__":
-
     print("Start")
 
     fix_random_seeds()
